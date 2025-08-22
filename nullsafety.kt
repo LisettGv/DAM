@@ -13,4 +13,26 @@ fun main(){
     println ("div: $div")
     println ("mod: $mod")
 
+
+    /*Creando Funciones*/
+
+    fun suma(a:Int,b:Int):int{
+        return a+b;
+    }
+
+    fun res(a:Int,b:Int):int{
+        return a-b;
+    }
+
+    fun nul(a:Int,b:Int):int{
+        return a*b;
+    }
+
+    fun div(a:Int,b:Int):int{
+        return a/b;
+    }
+
+    fun mod(a:Float,b:Float):Float{
+        return a%b;
+    }
 }
