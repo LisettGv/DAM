@@ -9,7 +9,7 @@ fun main(){
 
 
 /*Ejercicio 1*/
-
+/*
 fun main() {
 
     for (i in 1..20) {
@@ -19,10 +19,10 @@ fun main() {
         println(i)
     }
 }
-
+*/
 
 /*Ejercicio 2*/
-
+/*
 fun main() {
 
     for (i in 2..20) {
@@ -31,4 +31,31 @@ fun main() {
         }
     }
 }
+*/
+
+
+/*Ejercicio 3*/
+
+fun main() {
+
+    for (i in 2..100) {
+        if(i % 2 ==0){
+            println(i)
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
