@@ -66,7 +66,7 @@
 */
 
 //FOR
-fun main(){
+/*fun main(){
     var lista=mutableListOf(1,2,5,)
             println("lista: $lista")
 
@@ -79,6 +79,30 @@ fun main(){
             (llave,valor)-> println("La Llave es $llave y El Valor es $valor")
         }
 }
+*/
+
+fun main(){
+    val charmander = pokemon("Charmander", 40, 80)
+    charmander.informacion()
+
+}
+
+class pokemon(
+    //propiedades
+    val nombre: String,
+    val atk: Int,
+    val hp: Int
+
+){
+    fun sePreparaParaLaBatalla(){
+        println("El $nombre Se Prepara Para La Batalla")
+    }
+    fun informacion(){
+        println("$nombre ATK:$atk HP:$hp")
+    }
+
+}
+
 
 
 
