@@ -81,26 +81,71 @@
 }
 */
 
-fun main(){
+/*fun main(){
     val charmander = pokemon("Charmander", 40, 80)
     charmander.informacion()
+    charmander.recibeDano(30)
 
 }
 
 class pokemon(
     //propiedades
     val nombre: String,
-    val atk: Int,
-    val hp: Int
+    var atk: Int,
+    var hp: Int
 
 ){
     fun sePreparaParaLaBatalla(){
         println("El $nombre Se Prepara Para La Batalla")
     }
     fun informacion(){
-        println("$nombre ATK:$atk HP:$hp")
+        println("$nombre - ATK:$atk HP:$hp")
+    }
+    fun recibeDano(dano: Int){
+        println("$nombre recibe $dano puntos de daño")
+        hp = hp - dano
+        println("Ahora le quedan $hp puntos")
     }
 
+}
+*/
+
+fun main(){
+    val charmander = pokemon("Charmander", 40, 80)
+    val mewtwo = Pokemon("mewtwo", 300, 500)
+
+    charmander.informacion()
+    mewtwo.informacion()
+
+    charmander.sePreparaParaLaBatalla()
+    mewtwo.recibedano(charmander.atk)
+
+    mewtwo.sePreparaParaLaBatalla()
+    charmander.recibedano(mewtwo.atk)
+
+}
+
+class pokemon(
+    //propiedades
+    val nombre: string,
+    val atk: Int,
+    var hp: Int
+
+){
+    fun sePreparaParaLaBatalla(){
+        println("El $nombre Se Prepara Para La Batalla")
+    }
+    fun informacion(){
+        println("$nombre - ATK:$atk HP:$hp")
+    }
+    fun recibeDano(dano: Int){
+        println("$nombre recibe $dano puntos de daño")
+        hp = hp - dano
+        println("Ahora le quedan $hp puntos")
+    }
+    if (hp<0){
+        println("nombre SE HA DEBILITADO!!")
+    }
 }
 
 
