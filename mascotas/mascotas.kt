@@ -1,7 +1,13 @@
 package mascotas
 
-open class mascotas(var nombre: String, var edad: Int){
-    fun mostrarINfo():String{
-        return "nombre: $nombre edad: $edad"
+open class Mascotas(val nombre: String, var edad: Int){
+    fun mostrarINfo(){
+        println( "nombre: $nombre edad: $edad")
     }
+
+    fun main(){
+        var miMascota = Mascota("Pepito",4)
+        miMascota.mostrarInfo()
+    }
+
 }
