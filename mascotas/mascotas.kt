@@ -31,7 +31,13 @@ open class Mascotas(val nombre: String, var edad: Int) {
 
             println("nombre: $nombre|edad: $edad|sangreFria: $estadoSangre")
 
+            }
         }
-        }
+
+    fun main(){
+        var miPez = Pez("Pepito",4,true)
+        miPez.mostrarINfo()
+        miPez.nadar()
+    }
 
 }
